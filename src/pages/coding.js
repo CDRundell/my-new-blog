@@ -1,14 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Footer from '../components/footer'
+import Layout from "../components/layout"
 
 const CodingPage = () => {
-    return <div>
+    return <Layout>
             <h1> Welcome to my coding page! </h1>
             <Link to="/">Link back to homepage</Link>
-            <Footer></Footer>
-          </div >
+          </Layout>
 }
 
 export default CodingPage
