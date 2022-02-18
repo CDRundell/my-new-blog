@@ -6,6 +6,6 @@
 
 module.exports = {
   /* Your site config here */
-  assetPrefix: 'https://cdrundell.com',
+  assetPrefix: 'www.cdrundell.com',
   plugins: [],
 }
