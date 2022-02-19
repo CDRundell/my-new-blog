@@ -5,7 +5,4 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  assetPrefix: 'www.cdrundell.com',
-  plugins: [],
 }
