@@ -1,4 +1,4 @@
-// CSS RESET
+// COMEAU CSS RESET
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -35,7 +35,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 // HEADER
 h1 {
-  color: hotpink;
+  color: hsl(255, 85%, 30%);
+  font-size: calc(2.5rem);
+}
+
+h2 {
+  font-size: calc(2rem);
 }
 
 h3 {
@@ -44,6 +49,7 @@ h3 {
 
 .main-wrapper{
   text-align: center;
+  margin: 0 40px;
 }
 
 .link-bar{
@@ -52,6 +58,9 @@ h3 {
   gap: 16px;
 }
 
+.p{
+  font-size: calc(1.1875rem);
+}
 
 
 // BLOG POSTS ON HOMEPAGE TO MAKE INTO SEPARATE COMPONENT
@@ -65,7 +74,7 @@ h3 {
 
 
 .tile-wrapper  > div {
-  background-color: hotpink;
+  background-color: #ED303C;
   height: 600px;
   width: 400px;
   border-radius: 16px;
