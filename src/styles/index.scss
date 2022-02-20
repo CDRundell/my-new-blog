@@ -1,0 +1,73 @@
+// CSS RESET
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+// HEADER
+h1 {
+  color: hotpink;
+}
+
+h3 {
+  color: purple;
+}
+
+.main-wrapper{
+  text-align: center;
+}
+
+.link-bar{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+
+
+// BLOG POSTS ON HOMEPAGE TO MAKE INTO SEPARATE COMPONENT
+.tile-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-around;
+  margin-top: 24px;
+}
+
+
+.tile-wrapper  > div {
+  background-color: hotpink;
+  height: 600px;
+  width: 400px;
+  border-radius: 16px;
+  font-size: 18px;
+}

@@ -5,11 +5,10 @@ import Footer from "./footer"
 
 
 const Layout = (props) => {
-  return <div>
+  return <div class="main-wrapper">
            {props.children}
            <Footer />
          </div>
 }
-
 
 export default Layout
