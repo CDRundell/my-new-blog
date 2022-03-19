@@ -19,13 +19,10 @@ import '../styles/index.scss'
     `)
 
 
-  return <Layout>
-              <h1>
-                {data.site.siteMetadata.title}
-              </h1>
+  return (<Layout>
               <h2>
                 <strong> Chemist 🧪 | Coder 💻 </strong>
-                </h2>
+              </h2>
               <div class="link-bar">
                 <Link to="/blog">My blog</Link>
               </div>
@@ -40,7 +37,7 @@ import '../styles/index.scss'
                   <p>Project 3</p>
                 </div>
               </div>
-        </Layout>
+        </Layout>)
 }
 
 export default IndexPage

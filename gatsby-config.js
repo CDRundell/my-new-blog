@@ -6,8 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'My Blog',
-    author: 'Hobnob and Chris'
+    title: 'My Digital Garden',
+    author: 'Chris'
   },
   plugins: [`gatsby-plugin-sass`]
 }
