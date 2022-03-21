@@ -14,9 +14,9 @@ const Footer = () => {
       }
     `)
 
-  return <div class="footer">
+  return (<div class="footer">
           <p>Created by {data.site.siteMetadata.author} © 2022</p>
-        </div>
+        </div>)
 }
 
 export default Footer
