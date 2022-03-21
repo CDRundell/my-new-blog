@@ -9,7 +9,29 @@ module.exports = {
     title: 'My Digital Garden',
     author: 'Chris'
   },
-  plugins: [`gatsby-plugin-sass`]
+  plugins: [`gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-notion-api`,
+      options: {
+        token: `secret_csTMRLACkwg3XakoKBOosB7N5OxLoyIl5aTxRcENIUo`,
+        databaseId: `62267e01ff8f4486b03688f041bc5c8e`,
+        propsToFrontmatter: true,
+        lowerTitleLevel: true,
+      },
+    },
+    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [],
+      },
+    }
+]
 }
 
 
@@ -18,12 +40,11 @@ module.exports = {
 //   {
 //     resolve: `gatsby-source-notion-api`,
 //     options: {
-//       token: `$INTEGRATION_TOKEN`,
-//       databaseId: `$DATABASE_ID`,
+//       token: `secret_csTMRLACkwg3XakoKBOosB7N5OxLoyIl5aTxRcENIUo`,
+//       databaseId: `b7b6dfc44e754e0b9269e56e268d417f`,
 //       propsToFrontmatter: true,
 //       lowerTitleLevel: true,
 //     },
 //   },
 //   // ...
 // ]
-// https://www.notion.so/e913aac6cafe438c9048aead4010d6d3?v=dab95cf7a9334672bbe19c5cfd1906d7

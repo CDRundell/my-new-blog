@@ -1,23 +1,10 @@
 import React from "react"
-import { Link, graphql, useStaticQuery  } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from '../components/layout'
 import '../styles/index.scss'
 
-
-
-
   const IndexPage = () => {
-    const data = useStaticQuery(graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `)
-
 
   return (<Layout>
               <h2>
