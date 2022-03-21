@@ -4,6 +4,11 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+require("dotenv").config({
+  path: `.env`,
+})
+
+
 module.exports = {
   siteMetadata: {
     title: 'My Digital Garden',
@@ -13,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-source-notion-api`,
       options: {
-        token: `secret_csTMRLACkwg3XakoKBOosB7N5OxLoyIl5aTxRcENIUo`,
+        token: process.env.NOTION_TOKEN,
         databaseId: `62267e01ff8f4486b03688f041bc5c8e`,
         propsToFrontmatter: true,
         lowerTitleLevel: true,
@@ -33,18 +38,3 @@ module.exports = {
     }
 ]
 }
-
-
-
-// plugins: [
-//   {
-//     resolve: `gatsby-source-notion-api`,
-//     options: {
-//       token: `secret_csTMRLACkwg3XakoKBOosB7N5OxLoyIl5aTxRcENIUo`,
-//       databaseId: `b7b6dfc44e754e0b9269e56e268d417f`,
-//       propsToFrontmatter: true,
-//       lowerTitleLevel: true,
-//     },
-//   },
-//   // ...
-// ]
