@@ -14,8 +14,10 @@ const BlogPage = () => {
             node {
               frontmatter {
                 title
+                Created
               }
               html
+              id
             }
           }
         }
@@ -24,13 +26,15 @@ const BlogPage = () => {
 
     return (<Layout>
             <h1> Welcome to my blog</h1>
+            <div class="excerpt-wrapper">
               {data.allMarkdownRemark.edges.map(item =>(
-              <div class="tile" key={item.node.id}>
-                <h2>{item.node.frontmatter.title}</h2>
+                <div class="excerpt-tile" key={item.node.id}>
+                  <h2>{item.node.frontmatter.title}</h2>
                   <div dangerouslySetInnerHTML={{ __html: item.node.html }} />
               </div>
             ))}
             <Link to="/">Link back to my portfolio</Link>
+            </div>
           </Layout>)
 }
 

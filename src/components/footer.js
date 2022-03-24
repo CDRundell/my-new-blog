@@ -15,7 +15,7 @@ const Footer = () => {
     `)
 
   return (<div class="footer">
-          <p>Created by {data.site.siteMetadata.author} © 2022</p>
+          <p>Created by {data.site.siteMetadata.author} © 2022 using Gatsby and Notion API</p>
         </div>)
 }
 
