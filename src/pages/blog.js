@@ -1,8 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
-
-
 import Layout from "../components/layout"
 
 const BlogPage = () => {
@@ -16,6 +14,7 @@ const BlogPage = () => {
                 title
               }
               html
+              excerpt
             }
           }
         }
@@ -24,11 +23,11 @@ const BlogPage = () => {
 
     return (<Layout>
             <h1> Welcome to my blog</h1>
-              {data.allMarkdownRemark.edges.map(item =>(
-              <div class="tile" key={item.node.id}>
-                <h2>{item.node.frontmatter.title}</h2>
-                  <div dangerouslySetInnerHTML={{ __html: item.node.html }} />
-              </div>
+              {data.allMarkdownRemark.edges.map((item, i) =>(
+              <ul key={item.node.id}>
+                  <Link to={`/blog/${i + 1}`}><li>{item.node.frontmatter.title} - {item.node.excerpt}</li></Link>
+                  {/* <div dangerouslySetInnerHTML={{ __html: item.node.excerpt }} /> */}
+              </ul>
             ))}
             <Link to="/">Link back to my portfolio</Link>
           </Layout>)

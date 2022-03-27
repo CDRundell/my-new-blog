@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-source-notion-api`,
       options: {
         token: process.env.NOTION_TOKEN,
-        databaseId: `62267e01ff8f4486b03688f041bc5c8e`,
+        databaseId: process.env.DATABASE_TOKEN,
         propsToFrontmatter: true,
         lowerTitleLevel: true,
       },
