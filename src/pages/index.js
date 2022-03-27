@@ -3,10 +3,12 @@ import { Link } from "gatsby"
 
 import Layout from '../components/layout'
 import '../styles/index.scss'
+import Head from '../components/head'
 
   const IndexPage = () => {
 
   return (<Layout>
+          <Head title="Home"/>
               <h2>
                 <strong> Chemist 🧪 | Coder 💻 </strong>
               </h2>
