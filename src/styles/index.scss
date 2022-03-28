@@ -32,7 +32,7 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
-
+//
 // FONT FAMILY IMPORT
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 * {
@@ -45,10 +45,10 @@ p, h1, h2, h3, h4, h5, h6 {
   color: white;
   font-size: calc(2rem);
   text-align: center;
-  border: solid yellow;
+  // border: solid yellow;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .button {
@@ -59,7 +59,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 //
 
-
+// GENERAL SELECTORS
 h2 {
   font-size: calc(2rem);
   text-align: center;
@@ -67,6 +67,12 @@ h2 {
 }
 
 h3 {
+  font-size: calc(1.5rem);
+  color: white;
+}
+
+h4 {
+  font-size: calc(1.25rem);
   color: white;
 }
 
@@ -74,11 +80,13 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 16px;
-  border: solid hotpink;
+  // border: solid hotpink;
 }
 
-.p{
+p{
   font-size: calc(1.1875rem);
+  color: white;
+  text-align: center;
 }
 
 a{
@@ -86,30 +94,43 @@ a{
   color: white;
 }
 
+body {
+  background-color: #0E141B;
+}
 
-// BLOG POSTS ON HOMEPAGE TO MAKE INTO SEPARATE COMPONENT
+// HOMEPAGE CSS
 .tile-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: space-around;
   margin-top: 12px;
-  border: solid hotpink;
+  // border: solid hotpink;
 }
 
 
-.tile-wrapper  > div {
+.homepage-tile {
   background-color: #ED303C;
   height: 600px;
   width: 400px;
   border-radius: 16px;
   font-size: 18px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.homepage-tile > ul {
+  color: white;
+  margin-right: 16px;
+  text-align: justify;
+  padding-left: 32px;
+  padding-right: 16px;
 }
 
 
 .footer {
-  border: solid hotpink;
   padding: 8px;
   margin-top: auto;
   margin-top: 12px;
@@ -121,17 +142,9 @@ a{
   flex-direction: column;
   min-height: 100%;
   justify-content: space-between;
-  border: solid peachpuff;
+  // border: solid peachpuff;
 }
 
-body {
-  background-color: #0E141B;
-}
-
-p {
-  color: white;
-  text-align: center;
-}
 
 .tile {
   background-color: #ED303C;
@@ -139,9 +152,48 @@ p {
   width: 400px;
   border-radius: 16px;
   font-size: 18px;
-  text-align: center;
 }
 
-li, ul {
-  color: white;
+.blog-list {
+  margin-bottom: 24px;
+  background-color: white;
+  color: black;
+  padding: 8px 0;
 }
+
+// BOXES FOR TILES ON INDEX PAGE
+.flexbox{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  max-width: 400px;
+  margin: 8px 8px 16px;;
+}
+
+.flexbox > img {
+  height: 64px;
+  background-color: white;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.homepage-tile > h3 {
+  margin-top: 8px;
+}
+
+.homepage-tile > p {
+  margin: 0px 16px;
+  text-align: justify;
+}
+
+.spacer {
+  height: 124px;
+}
+
+//
+// FOOTER
+.footer > p {
+  color: white;
+  text-align: center;
+}
+//

@@ -29,7 +29,7 @@ const BlogPage = () => {
             <h1> Welcome to my blog</h1>
               {data.allMarkdownRemark.edges.map((item, i) =>(
               <ul key={item.node.id}>
-                  <Link to={`/blog/${i + 1}`}><li>{item.node.frontmatter.title} - {item.node.excerpt}</li></Link>
+                  <Link to={`/blog/${i + 1}`}><li class="blog-list">{item.node.frontmatter.title} - {item.node.excerpt}</li></Link>
               </ul>
             ))}
             <Link to="/">Link back to my portfolio</Link>
