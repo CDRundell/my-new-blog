@@ -21,7 +21,7 @@ import Head from '../components/head'
                   <ul>Asset-base.money website was made during my time at Le Wagon, highlights of this project are:
                     <li>Calling multiple APIs for financial information</li>
                     <li>Use of Charkick/Chart.js</li>
-                    <li>Webscraping of Opensea for live API prices</li>
+                    <li>Webscraping of OpenSea for live API prices</li>
                   </ul>
                   <p> Further work needs to be done on this website as at present it is a mobile only display format.</p>
                   <div>
@@ -37,8 +37,8 @@ import Head from '../components/head'
                 </div>
                 <div class="homepage-tile">
                   <h3>This website!</h3>
-                    <p> After my bootcamp I decided to learn React and generally strengthen my Javascript skills, I decided
-                      that making a website using Gatsby would be a good way to do this while also being a site for a blog.
+                    <p> After my bootcamp I decided to learn React and generally strengthen my Javascript skills.
+                      Making a website using Gatsby looked like a good way to do this, while also being a site for a blog.
                     </p>
                     <div class="spacer"></div>
                   <div>

@@ -25,7 +25,7 @@ input, button, textarea, select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6, li {
   overflow-wrap: break-word;
 }
 
@@ -89,6 +89,7 @@ p{
   text-align: center;
 }
 
+
 a{
   text-decoration: none;
   color: white;
@@ -127,6 +128,7 @@ body {
   text-align: justify;
   padding-left: 32px;
   padding-right: 16px;
+  font-size: calc(1.1875rem)
 }
 
 
@@ -187,7 +189,7 @@ body {
 }
 
 .spacer {
-  height: 124px;
+  height: 160px;
 }
 
 //
