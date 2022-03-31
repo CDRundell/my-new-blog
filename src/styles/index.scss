@@ -193,6 +193,11 @@ body {
   height: 160px;
 }
 
+.project-screenshot{
+  object-fit: scale-down;
+  height: 360px;
+}
+
 //
 // FOOTER
 .footer > p {

@@ -1,12 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from '../components/layout'
 import '../styles/index.scss'
 import Head from '../components/head'
 
   const IndexPage = () => {
-    // let stackArray = ["ruby-original", "rails-plain", "javascript-original", "css3-original", "postgresql-original-wordmark"]
+
+    const data = useStaticQuery(graphql`
+            {
+              cloudinaryMedia(secure_url: {}) {
+                secure_url
+              }
+            }
+            `)
+
+
+
   return (<Layout>
           <Head title="Home"/>
               <h2>
@@ -35,6 +46,7 @@ import Head from '../components/head'
                     </div>
                   </div>
                 </div>
+
                 <div class="homepage-tile">
                   <h3>This website!</h3>
                     <p> After my bootcamp I decided to learn React and generally strengthen my Javascript skills.
@@ -51,6 +63,9 @@ import Head from '../components/head'
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt='graphQL database' />
                     </div>
                   </div>
+                </div>
+                <div class="homepage-tile">
+                  <img src={data.cloudinaryMedia.secure_url} class="project-screenshot" alt="project screenshot" />
                 </div>
               </div>
         </Layout>)
