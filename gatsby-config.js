@@ -63,6 +63,6 @@ module.exports = {
         // This folder will be created if it doesn’t exist.
         uploadFolder: 'gatsby-cloudinary',
       }
-    }
+    },
     ]
 }

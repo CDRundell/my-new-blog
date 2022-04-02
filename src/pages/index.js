@@ -16,8 +16,6 @@ import Head from '../components/head'
             }
             `)
 
-
-
   return (<Layout>
           <Head title="Home"/>
               <h2>
