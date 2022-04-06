@@ -53,6 +53,7 @@ import Head from '../components/head'
                     <p> After my bootcamp I decided to learn React and generally strengthen my Javascript skills.
                       Making a website using Gatsby looked like a good way to do this, while also being a site for a blog (in the future).
                     </p>
+                    <p>All blog posts will be powered by the Notion API/GraphQL</p>
                   </div>
                   <div>
                     <h4>Tech stack</h4>
