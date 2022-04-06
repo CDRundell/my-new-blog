@@ -28,6 +28,7 @@ import Head from '../components/head'
                 <div className="homepage-tile">
                   <div className="info-wrapper">
                     <h3>Assetbase</h3>
+                    <i class="fa-brands fa-github"></i>
                     <ul>Asset-base.money website was made during my time at Le Wagon, highlights of this project are:
                       <li>Calling multiple APIs for financial information.</li>
                       <li>Use of Charkick/Chart.js.</li>
@@ -50,10 +51,14 @@ import Head from '../components/head'
                 <div className="homepage-tile">
                   <div className="info-wrapper">
                   <h3>This website!</h3>
-                    <p> After my bootcamp I decided to learn React and generally strengthen my Javascript skills.
+                    <p>
+                      After my bootcamp I decided to learn React and generally strengthen my Javascript skills.
                       Making a website using Gatsby looked like a good way to do this, while also being a site for a blog (in the future).
                     </p>
-                    <p>All blog posts will be powered by the Notion API/GraphQL</p>
+                    <br></br>
+                    <p>
+                      All blog posts will be powered by the Notion API/GraphQL
+                    </p>
                   </div>
                   <div>
                     <h4>Tech stack</h4>
