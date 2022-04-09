@@ -232,4 +232,17 @@ body {
 .icon-wrapper > svg {
   color: #49FA98;
 }
+
+@media(max-width: 420px){
+  .icon-wrapper a {
+  font-size: calc(5rem);
+  align-self: auto;
+  }
+
+  .icon-wrapper svg {
+  font-size: calc(5rem);
+  align-self: auto;
+  }
+}
+
 ////////////////////////////////
