@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
+import { FaGithub } from 'react-icons/fa';
 
 import Layout from '../components/layout'
 import '../styles/index.scss'
@@ -18,9 +19,12 @@ import Head from '../components/head'
 
   return (<Layout>
           <Head title="Home"/>
+            <div class="icon-wrapper">
               <h2>
-                <strong> Chemist 🧪 | Coder 💻 </strong>
+                <strong> Ex-Chemist 🧪 and Coder &nbsp;</strong>
               </h2>
+              <a href="https://github.com/CDRundell" target="_blank"><FaGithub /></a>
+            </div>
               <div className="link-bar">
                 {/* <Link to="/blog">My blog</Link> */}
               </div>
@@ -32,7 +36,7 @@ import Head from '../components/head'
                     <ul>Asset-base.money website was made during my time at Le Wagon, highlights of this project are:
                       <li>Calling multiple APIs for financial information.</li>
                       <li>Use of Charkick/Chart.js.</li>
-                      <li>Webscraping of OpenSea for live API prices.</li>
+                      <li>Webscraping of OpenSea for live NFT prices.</li>
                     </ul>
                   </div>
                   <iframe width="380" height="315" src="https://www.youtube.com/embed/E8erCAf7OcQ?start=2315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;"></iframe>
