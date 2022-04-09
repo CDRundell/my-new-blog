@@ -205,6 +205,8 @@ body {
   text-align: center;
 }
 //
+
+// REACT ICON STYLING////////////
 .icon-wrapper {
   display: flex;
   justify-content: center;
@@ -221,3 +223,13 @@ body {
 .icon-wrapper a:hover{
   color: #B537F2;
 }
+
+.icon-wrapper svg {
+  display: inline-flex;
+  align-self: center;
+}
+
+.icon-wrapper > svg {
+  color: #49FA98;
+}
+////////////////////////////////

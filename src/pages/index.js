@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import { graphql, useStaticQuery } from "gatsby"
 import { FaGithub } from 'react-icons/fa';
+import { MdScience } from "react-icons/md";
 
 import Layout from '../components/layout'
 import '../styles/index.scss'
@@ -9,25 +9,17 @@ import Head from '../components/head'
 
   const IndexPage = () => {
 
-    // const data = useStaticQuery(graphql`
-    //         {
-    //           cloudinaryMedia(secure_url: {}) {
-    //             secure_url
-    //           }
-    //         }
-    //         `)
-
   return (<Layout>
           <Head title="Home"/>
             <div class="icon-wrapper">
-              <h2>
-                <strong> Ex-Chemist 🧪 and Coder &nbsp;</strong>
-              </h2>
+              <h2><strong>Ex-Chemist &nbsp;</strong></h2>
+              <MdScience/>
+              <h2><strong>&nbsp; and Coder &nbsp;</strong></h2>
               <a href="https://github.com/CDRundell" target="_blank"><FaGithub /></a>
             </div>
-              <div className="link-bar">
+              {/* <div className="link-bar"> */}
                 {/* <Link to="/blog">My blog</Link> */}
-              </div>
+              {/* </div> */}
               <div className="tile-wrapper">
                 <div className="homepage-tile">
                   <div className="info-wrapper">
