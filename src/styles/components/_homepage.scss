@@ -1,0 +1,84 @@
+// HOMEPAGE CSS
+.tile-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-around;
+  margin-top: 12px;
+  // border: solid hotpink;
+}
+
+
+.homepage-tile {
+  background-color: hsl(212, 32%, 14%);
+  height: 680px;
+  width: 400px;
+  border-radius: 16px;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.homepage-tile ul {
+  color: white;
+  margin-right: 16px;
+  text-align: justify;
+  padding-left: 32px;
+  padding-right: 16px;
+  font-size: calc(1.1875rem);
+  padding-bottom: 16px;
+}
+
+.homepage-tile h3 {
+  padding-bottom: 8px;
+}
+
+
+.footer {
+  padding: 8px;
+  margin-top: auto;
+  margin-top: 12px;
+  border-radius: 8px;
+  ;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  // border: solid peachpuff;
+}
+
+
+// BOXES FOR TILES ON INDEX PAGE
+.flexbox {
+  display: flex;
+  gap: 8px;
+  justify-content: space-around;
+  max-width: 380px;
+  margin: 8px 8px 16px;
+  min-width: 380px;
+}
+
+.flexbox>img {
+  height: 64px;
+  background-color: white;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.homepage-tile h3 {
+  margin-top: 8px;
+}
+
+.homepage-tile p {
+  margin: 0px 16px;
+  text-align: justify;
+}
+
+.homepage-tile iframe {
+  padding-left: 16px;
+}

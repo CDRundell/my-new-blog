@@ -1,0 +1,40 @@
+// REACT ICON STYLING////////////
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  font-size: calc(2rem);
+  text-align: center;
+  color: white;
+}
+
+.icon-wrapper a {
+  display: inline-flex;
+  align-self: center;
+}
+
+.icon-wrapper a:hover {
+  color: #B537F2;
+}
+
+.icon-wrapper svg {
+  display: inline-flex;
+  align-self: center;
+}
+
+.icon-wrapper>svg {
+  color: #49FA98;
+}
+
+@media(max-width: 420px) {
+  .icon-wrapper a {
+    font-size: calc(5rem);
+    align-self: auto;
+  }
+
+  .icon-wrapper svg {
+    font-size: calc(5rem);
+    align-self: auto;
+  }
+}
+
+////////////////////////////////

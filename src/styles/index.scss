@@ -1,3 +1,11 @@
+// IMPORTS
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import 'components/footer';
+@import 'components/header';
+@import 'components/homepage';
+@import 'components/icons';
+@import 'components/blog';
+
 // COMEAU CSS RESET
 *, *::before, *::after {
   box-sizing: border-box;
@@ -32,32 +40,10 @@ p, h1, h2, h3, h4, h5, h6, li {
 #root, #__next {
   isolation: isolate;
 }
-//
-// FONT FAMILY IMPORT
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 * {
   font-family: 'Nunito', sans-serif;
 }
-
-// HEADER
-
-.header {
-  color: white;
-  font-size: calc(2rem);
-  text-align: center;
-  // border: solid yellow;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button {
-  font-size: 1.5rem;
-  border-radius: 8px;
-  height: 75%;
-}
-
-//
 
 // GENERAL SELECTORS
 h2 {
@@ -80,7 +66,6 @@ h4 {
   display: flex;
   justify-content: center;
   gap: 16px;
-  // border: solid hotpink;
 }
 
 p{
@@ -95,63 +80,10 @@ a{
   color: white;
 }
 
+// MISC
 body {
   background-color: #0E141B;
 }
-
-// HOMEPAGE CSS
-.tile-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: space-around;
-  margin-top: 12px;
-  // border: solid hotpink;
-}
-
-
-.homepage-tile {
-  background-color: hsl(212, 32%, 14%);
-  height: 680px;
-  width: 400px;
-  border-radius: 16px;
-  font-size: 18px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.homepage-tile ul {
-  color: white;
-  margin-right: 16px;
-  text-align: justify;
-  padding-left: 32px;
-  padding-right: 16px;
-  font-size: calc(1.1875rem);
-  padding-bottom: 16px;
-}
-
-.homepage-tile h3 {
-  padding-bottom: 8px;
-}
-
-
-.footer {
-  padding: 8px;
-  margin-top: auto;
-  margin-top: 12px;
-  border-radius: 8px;;
-}
-
-.main-wrapper{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: space-between;
-  // border: solid peachpuff;
-}
-
 
 .tile {
   background-color: #ED303C;
@@ -160,89 +92,3 @@ body {
   border-radius: 16px;
   font-size: 18px;
 }
-
-.blog-list {
-  margin-bottom: 24px;
-  background-color: white;
-  color: black;
-  padding: 8px 0;
-}
-
-// BOXES FOR TILES ON INDEX PAGE
-.flexbox{
-  display: flex;
-  gap: 8px;
-  justify-content: space-around;
-  max-width: 380px;
-  margin: 8px 8px 16px;
-  min-width: 380px;
-}
-
-.flexbox > img {
-  height: 64px;
-  background-color: white;
-  padding: 6px;
-  border-radius: 6px;
-}
-
-.homepage-tile  h3 {
-  margin-top: 8px;
-}
-
-.homepage-tile  p {
-  margin: 0px 16px;
-  text-align: justify;
-}
-
-.homepage-tile  iframe {
-  padding-left: 16px;
-}
-
-//
-// FOOTER
-.footer > p {
-  color: white;
-  text-align: center;
-}
-//
-
-// REACT ICON STYLING////////////
-.icon-wrapper {
-  display: flex;
-  justify-content: center;
-  font-size: calc(2rem);
-  text-align: center;
-  color: white;
-}
-
-.icon-wrapper a {
-  display: inline-flex;
-  align-self: center;
-}
-
-.icon-wrapper a:hover{
-  color: #B537F2;
-}
-
-.icon-wrapper svg {
-  display: inline-flex;
-  align-self: center;
-}
-
-.icon-wrapper > svg {
-  color: #49FA98;
-}
-
-@media(max-width: 420px){
-  .icon-wrapper a {
-  font-size: calc(5rem);
-  align-self: auto;
-  }
-
-  .icon-wrapper svg {
-  font-size: calc(5rem);
-  align-self: auto;
-  }
-}
-
-////////////////////////////////
