@@ -19,9 +19,10 @@ const BlogPost = (props) => {
   return (
     <Layout>
       <Helmet title={props.data.markdownRemark.frontmatter.title} />
-      <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
-      <Link to="/blog">Back to blog page</Link>
+        <div className="post">
+          <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
+        </div>
     </Layout>
   )
 }

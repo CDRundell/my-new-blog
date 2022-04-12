@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from "gatsby"
 
 
 const Header = () => {
-
   const data = useStaticQuery(graphql`
       query {
         site {

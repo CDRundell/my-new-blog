@@ -1,0 +1,15 @@
+.post {
+  margin: 0 calc(10%);
+  background-color: pink;
+  padding: 16px 16px;
+  text-align: center;
+}
+
+.post > p {
+  text-align: justify;
+}
+
+.post p {
+  text-align: justify;
+  margin: 24px 16px;
+}

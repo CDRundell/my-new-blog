@@ -1,6 +1,42 @@
-.blog-list {
-  margin-bottom: 24px;
+.blog-tile{
   background-color: white;
-  color: black;
-  padding: 8px 0;
+  margin: 0px calc(10%);
+  padding: 16px 16px;
+  border-radius: 8px;
+  opacity: 95%
 }
+
+.blog-tile  a {
+  color: #080808;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tags p {
+  color: #292929;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.Learning-to-Code {
+  background-color: aqua;
+}
+
+.Career-Change {
+  background-color: hotpink;
+}
+
+.blog-tile:hover{
+  opacity: 100%
+}
+
+// .line{
+//   color: #292929;
+// }

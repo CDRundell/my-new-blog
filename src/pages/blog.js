@@ -14,7 +14,11 @@ const BlogPage = () => {
           edges {
             node {
               frontmatter {
-                title
+                title,
+                Tags {
+                  name
+                }
+              Created
               }
               html
               excerpt
@@ -24,15 +28,27 @@ const BlogPage = () => {
       }
     `)
 
-    return (<Layout>
+    return (
+            <Layout>
             <Head title="Blog"/>
-            <h1> Welcome to my blog</h1>
-              {data.allMarkdownRemark.edges.map((item, i) =>(
-              <ul key={item.node.id}>
-                  <Link to={`/blog/${i + 1}`}><li class="blog-list">{item.node.frontmatter.title} - {item.node.excerpt}</li></Link>
-              </ul>
-            ))}
-            <Link to="/">Link back to my portfolio</Link>
+              <div>
+                {data.allMarkdownRemark.edges.map((item, i) =>(
+                <div className="blog-tile">
+                  <p key={item.node.id}>
+                      <Link to={`/blog/${i + 1}`}>
+                        <strong> {item.node.frontmatter.title} ({item.node.frontmatter.Created.split("T")[0].split("-").reverse().join("-")})</strong> - {item.node.excerpt}
+                      </Link>
+                  </p>
+
+                  <div className="tags">
+                      {item.node.frontmatter.Tags.map((tag) => (
+                        <p className= {tag.name.replace(/ /g, '-')} >#{tag.name}</p>
+                      ))
+                        }
+                  </div>
+                </div>
+              ))}
+              </div>
           </Layout>)
 }
 

@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import 'components/footer';
 @import 'components/header';
+@import 'components/toolbar';
 @import 'components/homepage';
 @import 'components/icons';
 @import 'components/blog';
+@import 'components/blogpost';
 
 // COMEAU CSS RESET
 *, *::before, *::after {
