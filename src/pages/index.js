@@ -12,9 +12,9 @@ import Head from '../components/head'
   return (<Layout>
           <Head title="Home"/>
             <div class="icon-wrapper">
-              <h2><strong>Ex-Chemist &nbsp;</strong></h2>
+              <h3>Hi there, I'm Chris, an Ex-Organic Chemist &nbsp;</h3>
               <MdScience/>
-              <h2><strong>&nbsp; and Coder &nbsp;</strong></h2>
+              <h3>&nbsp; and Full-Stack Web Developer &nbsp;</h3>
               <a href="https://github.com/CDRundell" target="_blank"><FaGithub /></a>
             </div>
               {/* <div className="link-bar"> */}

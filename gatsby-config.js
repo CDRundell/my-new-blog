@@ -11,7 +11,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: 'My Digital Garden',
+    title: 'My Personal Site',
     author: 'Chris'
   },
   plugins: [`gatsby-plugin-sass`,

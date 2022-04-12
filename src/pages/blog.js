@@ -31,23 +31,26 @@ const BlogPage = () => {
     return (
             <Layout>
             <Head title="Blog"/>
-              <div>
+              <div className="blog-wrapper">
                 {data.allMarkdownRemark.edges.map((item, i) =>(
-                <div className="blog-tile">
-                  <p key={item.node.id}>
-                      <Link to={`/blog/${i + 1}`}>
-                        <strong> {item.node.frontmatter.title} ({item.node.frontmatter.Created.split("T")[0].split("-").reverse().join("-")})</strong> - {item.node.excerpt}
-                      </Link>
-                  </p>
-
-                  <div className="tags">
+                  <Link to={`/blog/${i + 1}`}>
+                  <div className="blog-tile" key={item.node.id}>
+                    <div className="blog-text">
+                      <p><strong>{item.node.frontmatter.title}</strong></p>
+                      <p>{item.node.frontmatter.Created.split("T")[0].split("-").reverse().join("-")}</p>
+                      <p>{item.node.excerpt}</p>
+                    </div>
+                    <div className="tags">
                       {item.node.frontmatter.Tags.map((tag) => (
                         <p className= {tag.name.replace(/ /g, '-')} >#{tag.name}</p>
                       ))
-                        }
+                      }
+                    </div>
                   </div>
-                </div>
+                  </Link>
               ))}
+
+
               </div>
           </Layout>)
 }

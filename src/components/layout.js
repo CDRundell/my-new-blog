@@ -10,7 +10,7 @@ const Layout = (props) => {
   return (<div class="main-wrapper">
           <div>
             <Navbar />
-            <Header />
+            {/* <Header /> */}
             {props.children}
           </div>
            <Footer />
