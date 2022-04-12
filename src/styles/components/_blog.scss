@@ -2,8 +2,8 @@
   margin-top: 24px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 24px calc(10%)
 }
-
 
 
 @media screen and (max-width: 992px) {
@@ -12,11 +12,8 @@
   }
 }
 
-
-
 .blog-tile{
   background-color: #17222E;
-  margin: 0px calc(10%);
   padding: 16px 16px;
   border-radius: 8px;
   opacity: 95%
@@ -36,12 +33,3 @@
 .blog-text > p {
   text-align: justify;
 }
-
-// .blog-info{
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .blog-info p {
-//   font-size: 1rem;
-// }
