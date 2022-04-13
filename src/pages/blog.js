@@ -32,7 +32,7 @@ const BlogPage = () => {
             <Head title="Blog"/>
               <div className="blog-wrapper">
                 {data.allMarkdownRemark.edges.slice(0).reverse().map((item, i) =>(
-                  <Link to={`/blog/${i + 1}`}>
+                  <Link to={`/blog/${data.allMarkdownRemark.edges.length - i}`}>
                   <div className="blog-tile" key={item.node.id}>
                     <div className="blog-text">
                       <p><strong>{item.node.frontmatter.title}</strong></p>

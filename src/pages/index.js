@@ -17,9 +17,6 @@ import Head from '../components/head'
               <h3>&nbsp; and Full-Stack Web Developer &nbsp;</h3>
               <a href="https://github.com/CDRundell" target="_blank"><FaGithub /></a>
             </div>
-              {/* <div className="link-bar"> */}
-                {/* <Link to="/blog">My blog</Link> */}
-              {/* </div> */}
               <div className="tile-wrapper">
                 <div className="homepage-tile">
                   <div className="info-wrapper">
@@ -53,7 +50,7 @@ import Head from '../components/head'
                     </p>
                     <br></br>
                     <p>
-                      All blog posts will be powered by the Notion API/GraphQL
+                      All blog posts will be powered by the Notion API/GraphQL.
                     </p>
                   </div>
                   <div>
@@ -67,9 +64,6 @@ import Head from '../components/head'
                     </div>
                   </div>
                 </div>
-                {/* <div class="homepage-tile">
-                  <img src={data.cloudinaryMedia.secure_url} class="project-screenshot" alt="project screenshot" />
-                </div> */}
               </div>
         </Layout>)
 }
