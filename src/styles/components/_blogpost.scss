@@ -1,8 +1,11 @@
 .post {
   margin: 0 calc(10%);
-  background-color: pink;
+  background-color: #17222E;
   padding: 16px 16px;
   text-align: center;
+  min-height: 85vh;
+  color: white;
+  opacity: 95%;
 }
 
 .post > p {
