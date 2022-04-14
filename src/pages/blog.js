@@ -18,6 +18,7 @@ const BlogPage = () => {
                 Tags {
                   name
                 }
+              Publish,
               Created
               }
               html
@@ -32,6 +33,8 @@ const BlogPage = () => {
             <Head title="Blog"/>
               <div className="blog-wrapper">
                 {data.allMarkdownRemark.edges.slice(0).reverse().map((item, i) =>(
+                  item.node.frontmatter.Publish
+                  &&
                   <Link to={`/blog/${data.allMarkdownRemark.edges.length - i}`}>
                   <div className="blog-tile" key={item.node.id}>
                     <div className="blog-text">
