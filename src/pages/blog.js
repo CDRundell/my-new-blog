@@ -51,8 +51,6 @@ const BlogPage = () => {
                   </div>
                   </Link>
               ))}
-
-
               </div>
           </Layout>)
 }
