@@ -12,7 +12,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: 'My Personal Site',
-    author: 'Chris'
+    author: 'Chris Rundell'
   },
   plugins: [`gatsby-plugin-sass`,
             `gatsby-plugin-react-helmet`,

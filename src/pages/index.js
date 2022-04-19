@@ -1,8 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import { FaGithub } from 'react-icons/fa';
 import { MdScience } from "react-icons/md";
-
 import Layout from '../components/layout'
 import '../styles/index.scss'
 import Head from '../components/head'
@@ -18,6 +16,7 @@ import Head from '../components/head'
               <a href="https://github.com/CDRundell" target="_blank"><FaGithub /></a>
             </div>
               <div className="tile-wrapper">
+
                 <div className="homepage-tile">
                   <div className="info-wrapper">
                     <h3>Assetbase</h3>
@@ -30,7 +29,7 @@ import Head from '../components/head'
                   </div>
                   <iframe width="380" height="315" src="https://www.youtube.com/embed/E8erCAf7OcQ?start=2315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;"></iframe>
                   <div>
-                    <h4>Tech stack</h4>
+                    <h4>Languages/Frameworks used:</h4>
                     <div class="flexbox">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt='Ruby language' />
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg" alt='Rails framework' />
@@ -40,7 +39,31 @@ import Head from '../components/head'
                     </div>
                   </div>
                 </div>
-
+                <div className="homepage-tile">
+                  <div className="info-wrapper">
+                    <h3>Saunaswap</h3>
+                    <i class="fa-brands fa-github"></i>
+                    <ul>This was my first website during the bootcamp, a simple airbnb clone, the key parts of the website are:
+                      <li>CRUD actions for both Saunas, users and reviews.</li>
+                      <li>Authentication/Authorization using Devise and Pundit </li>
+                      <li>Use of Mapbox geocoding API </li>
+                      <li>Website deployment to Heroku </li>
+                    </ul>
+                  </div>
+                  <div class='saunaswap-btn-wrapper'>
+                    <a href="https://saunaswap.herokuapp.com/" class="saunaswap-btn" target="_blank" > Link to Saunaswap </a>
+                  </div>
+                  <div>
+                    <h4>Languages/Frameworks used:</h4>
+                    <div class="flexbox">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt='Ruby language' />
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain.svg" alt='Rails framework' />
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt='Javascript language' />
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt='CSS language' />
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" alt='PostgreSQL database' />
+                    </div>
+                  </div>
+                </div>
                 <div className="homepage-tile">
                   <div className="info-wrapper">
                   <h3>This website!</h3>
@@ -50,11 +73,11 @@ import Head from '../components/head'
                     </p>
                     <br></br>
                     <p>
-                      All blog posts will be powered by the Notion API/GraphQL.
+                      All blog posts are powered by the Notion API and use GraphQL.
                     </p>
                   </div>
                   <div>
-                    <h4>Tech stack</h4>
+                    <h4>Languages/Frameworks used:</h4>
                     <div className="flexbox">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt='Javascript language' />
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt='React framework' />
@@ -64,6 +87,7 @@ import Head from '../components/head'
                     </div>
                   </div>
                 </div>
+
               </div>
         </Layout>)
 }
