@@ -1,11 +1,24 @@
 import React from "react"
 import { FaGithub } from 'react-icons/fa';
 import { MdScience } from "react-icons/md";
-import Layout from '../components/layout'
-import '../styles/index.scss'
-import Head from '../components/head'
+import Layout from '../components/layout';
+import '../styles/index.scss';
+import Head from '../components/head';
+import { graphql, useStaticQuery } from "gatsby"
+
 
   const IndexPage = () => {
+
+    const data = useStaticQuery(graphql`
+      { allCloudinaryMedia {
+          edges {
+            node {
+              url
+            }
+          }
+        }
+      }
+    `)
 
   return (<Layout>
           <Head title="Home"/>
@@ -13,7 +26,7 @@ import Head from '../components/head'
               <h3>Hi there, I'm Chris, an Ex-Organic Chemist &nbsp;</h3>
               <MdScience/>
               <h3>&nbsp; and Full-Stack Web Developer &nbsp;</h3>
-              <a href="https://github.com/CDRundell" target="_blank"><FaGithub /></a>
+              <a href="https://github.com/CDRundell" target="_blank" rel="noreferrer"><FaGithub /></a>
             </div>
               <div className="tile-wrapper">
 
@@ -45,14 +58,13 @@ import Head from '../components/head'
                     <i class="fa-brands fa-github"></i>
                     <ul>This was my first website during the bootcamp, a simple airbnb clone, the key parts of the website are:
                       <li>CRUD actions for both Saunas, users and reviews.</li>
-                      <li>Authentication/Authorization using Devise and Pundit </li>
+                      <li>Authentication and authorization using Devise and Pundit </li>
                       <li>Use of Mapbox geocoding API </li>
-                      <li>Website deployment to Heroku </li>
                     </ul>
                   </div>
-                  <div class='saunaswap-btn-wrapper'>
-                    <a href="https://saunaswap.herokuapp.com/" class="saunaswap-btn" target="_blank" > Link to Saunaswap </a>
-                  </div>
+                  <a href="https://saunaswap.herokuapp.com/" alt="sauna swap link" target="_blank" rel="noreferrer">
+                    <img src={data.allCloudinaryMedia.edges[0].node.url} class="screenshot"></img>
+                  </a>
                   <div>
                     <h4>Languages/Frameworks used:</h4>
                     <div class="flexbox">
