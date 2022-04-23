@@ -7,7 +7,6 @@
 }
 
 .tags p {
-  color: #292929;
   padding: 8px 16px;
   font-size: 1rem;
   border-radius: 8px;
@@ -15,21 +14,31 @@
 }
 
 .Learning-to-Code {
-  background-color: hsl(179deg 72% 50%);
+  background-color: hsl(179deg, 72%, 50%);
+  color: hsl(0deg 0% 16%);
 }
 
 .Career-Change {
-  background-color: hsl(345deg 100% 73%);
+  background-color: hsl(345deg, 100%, 73%);
+  color: hsl(0deg, 0%, 100%, 0.87);
 }
 
 .Javascript {
-  background-color: hsl(53deg 88% 65%);
+  background-color: hsl(53deg, 88%, 65%);
+  color: hsl(0deg 0% 16%);
 }
 
-.css {
+.CSS {
   background-color: hsl(16.1deg, 100%, 65.7%);
+  color: hsl(0deg 0% 16%);
 }
 
-.html{
-  background-color: hsl(292deg 94% 74%);
+.HTML{
+  background-color: hsl(12, 88%, 56%);
+  color: hsla(0deg, 0%, 100%, 0.87);
+}
+
+.Ruby {
+  background-color: hsla(338, 95%, 56%);
+  color: hsla(0deg, 0%, 100%, 0.87);
 }

@@ -11,4 +11,6 @@
 .gatsby-highlight pre {
   text-align: center;
   background: hsl(211deg 35% 20%);
+  display: inline-block;
+  border: 1px solid hsla(0deg, 0%, 100%, 0.87);
 }
