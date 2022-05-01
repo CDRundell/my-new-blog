@@ -15,7 +15,7 @@ const Footer = () => {
       }
     `)
 
-  return (<div class="footer">
+  return (<div className="footer">
           <p>Created by {data.site.siteMetadata.author} © 2022</p>
           <a href="https://github.com/CDRundell" target="_blank" alt="github logo link"><FaGithub /></a>
         </div>)
