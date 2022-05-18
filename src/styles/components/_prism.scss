@@ -9,7 +9,7 @@
 }
 
 .gatsby-highlight pre {
-  text-align: center;
+  // text-align: center;
   background: hsl(211deg 35% 20%);
   display: inline-block;
   border: 1px solid hsla(0deg, 0%, 100%, 0.87);
@@ -17,4 +17,13 @@
 
 .gatsby-highlight {
   overflow: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .post {
+    margin: 0 5%;
+  }
+  .gatsby-highlight pre {
+    font-size: 0.75rem;
+  }
 }
