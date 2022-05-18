@@ -16,3 +16,11 @@
   text-align: justify;
   margin: 24px 16px;
 }
+
+.post a {
+  font-weight: bold;
+}
+
+.post a:hover{
+  text-decoration: underline;
+}

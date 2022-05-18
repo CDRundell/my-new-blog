@@ -1,11 +1,10 @@
 import React from 'react'
-import { Link } from "gatsby"
+import { Link, withAssetPrefix } from "gatsby"
 
 const Navbar = () => {
   const activeStyle = {
-                  backgroundColor: "white",
-                  borderRadius: "8px",
-                  color: "#0E141B",
+                  textDecoration: "underline",
+                  color: "hsla(0deg, 0 %, 100 %, 0.87)",
                   padding: "8px"
                 }
   return (
