@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Head from '../components/head'
+import Tags from '../components/tags'
 
 
 const BlogPage = () => {
@@ -42,12 +43,13 @@ const BlogPage = () => {
                       <p>{item.node.frontmatter.Created.split("T")[0].split("-").reverse().join("-")}</p>
                       <p>{item.node.excerpt}</p>
                     </div>
-                    <div className="tags">
+                    {/* <div className="tags">
                       {item.node.frontmatter.Tags.map((tag) => (
                         <p className= {tag.name.replace(/ /g, '-')} >#{tag.name}</p>
                       ))
                       }
-                    </div>
+                    </div> */}
+                        <Tags tags={item.node.frontmatter.Tags}/>
                   </div>
                   </Link>
               ))}
