@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import Head from '../components/head'
 import Tags from '../components/tags'
+import BlogText from '../components/blog_text'
 
 
 const BlogPage = () => {
@@ -37,14 +38,10 @@ const BlogPage = () => {
                   item.node.frontmatter.Publish
                   &&
                   <Link to={`/blog/${data.allMarkdownRemark.edges.length - i}`}>
-                  <div className="blog-tile" key={item.node.id}>
-                    <div className="blog-text">
-                      <p><strong>{item.node.frontmatter.title}</strong></p>
-                      <p>{item.node.frontmatter.Created.split("T")[0].split("-").reverse().join("-")}</p>
-                      <p>{item.node.excerpt}</p>
+                    <div className="blog-tile" key={item.node.id}>
+                      <BlogText text={item.node.frontmatter} excerpt={item.node.excerpt} />
+                      <Tags tags={item.node.frontmatter.Tags}/>
                     </div>
-                    <Tags tags={item.node.frontmatter.Tags}/>
-                  </div>
                   </Link>
               ))}
               </div>
