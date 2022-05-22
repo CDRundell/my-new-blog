@@ -5,7 +5,9 @@ const Tags = (props) => {
   return (
     <div className="tags">
       {tags.map((tag) => (
-        <p className={tag.name.replace(/ /g, '-')} >#{tag.name}</p>
+        tag.name !== 'Notion' && <p className={tag.name.replace(/ /g, '-')} >#{tag.name}</p>
+        ||
+        tag.name === 'Notion' && <img src={`https://logo.clearbit.com/${tag.name}.com`} className={`${tag.name}`} />
       ))
       }
     </div>

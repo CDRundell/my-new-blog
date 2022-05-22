@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   margin-top: 16px;
 }
 
@@ -44,9 +44,11 @@
 }
 
 .Notion {
-  background-color: hsl(45, 8%, 20%);
-  color: hsla(0deg, 0%, 100%, 0.87);
+  // background-color: hsl(45, 8%, 20%);
+  // color: hsla(0deg, 0%, 100%, 0.87);
   // border-style: solid;
   // border-color: hsla(0deg, 0%, 100%, 0.87);
   // border-width: 1px;
+  max-height: 2.5rem;
+  border-radius: 8px;
 }

@@ -43,13 +43,7 @@ const BlogPage = () => {
                       <p>{item.node.frontmatter.Created.split("T")[0].split("-").reverse().join("-")}</p>
                       <p>{item.node.excerpt}</p>
                     </div>
-                    {/* <div className="tags">
-                      {item.node.frontmatter.Tags.map((tag) => (
-                        <p className= {tag.name.replace(/ /g, '-')} >#{tag.name}</p>
-                      ))
-                      }
-                    </div> */}
-                        <Tags tags={item.node.frontmatter.Tags}/>
+                    <Tags tags={item.node.frontmatter.Tags}/>
                   </div>
                   </Link>
               ))}
