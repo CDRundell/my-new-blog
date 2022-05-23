@@ -6,9 +6,9 @@ import '../styles/index.scss';
 import Head from '../components/head';
 import { graphql, useStaticQuery } from "gatsby"
 
-import Tile1 from '../components/tile1'
-import Tile2 from '../components/tile2'
-import Tile3 from '../components/tile3'
+import Tile1 from '../components/tiles/tile1'
+import Tile2 from '../components/tiles/tile2'
+import Tile3 from '../components/tiles/tile3'
 
 
   const IndexPage = () => {
