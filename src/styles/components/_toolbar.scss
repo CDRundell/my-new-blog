@@ -13,9 +13,19 @@
   gap: 24px;
 }
 
+.navbar li {
+  padding: 0 12px;
+}
+
 
 .navbar li a {
   opacity: 80%;
   font-size: 1.1rem;
   line-height: 28.8px;
+}
+
+
+.navbar li:hover {
+  background-color: #18232f;
+  border-radius: 6px;
 }
