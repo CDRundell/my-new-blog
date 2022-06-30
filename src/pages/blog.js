@@ -30,11 +30,17 @@ const BlogPage = () => {
         }
       }
     `)
+
+   const sortedArray = data.allMarkdownRemark.edges.slice(0).sort(
+      function(a,b){
+        return a.node.frontmatter.Created.localeCompare(b.node.frontmatter.Created)
+      }
+    )
     return (
             <Layout>
             <Head title="Blog"/>
               <div className="blog-wrapper">
-                {data.allMarkdownRemark.edges.slice(0).reverse().map((item, i) =>(
+                {sortedArray.reverse().map((item, i) =>(
                   item.node.frontmatter.Publish
                   &&
                   <Link to={`/blog/${data.allMarkdownRemark.edges.length - i}`}>
